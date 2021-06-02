@@ -2,6 +2,24 @@ package com.ani.orm.ormdetails.xml;
 
 public class Employee {
 
+    /*
+    * Steps for connecting to DB using jdbc
+    *  - put jdbc driver in class path
+    *  - provide required properties -> url, username and password
+    *  - test the connection inside your java app
+    *  - creating statement or prepared statements
+    *
+    * -----------------------------------------------------------------------
+    *
+    * - Classes -> configuration, retrieval, connection pooling
+    * - Security against attacks -> SQL Injection -> https://owasp.org/www-project-top-ten/
+    * - Optimized SQLs
+    * - Visualization
+    * - Transaction mgmt -> ACID
+    * - Session Mgmt
+    * - Thread Mgmt
+    * - Object to Relation/Entity Mapping - vice versa
+    ** */
     private Long id;
     private String firstName;
     private String lastName;
