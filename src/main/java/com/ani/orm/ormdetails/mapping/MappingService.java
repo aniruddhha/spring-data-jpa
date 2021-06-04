@@ -100,4 +100,9 @@ public class MappingService {
                 .collect(Collectors.toList())
                 .forEach(System.out::println);
     }
+
+
+    public void chipOnBoardFetch() {
+        chipRepository.chipOnBoard(1L).orElseThrow(RuntimeException::new).forEach(System.out::println);
+    }
 }
